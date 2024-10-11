@@ -1,102 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biblioteca digital (tp final)</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="shortcut icon" href="./icono.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Digital (tp final)</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-<section class="Biblioteca" >
-  <header><h1>Biblioteca</h1></header>
-</section>
-      <nav>
-        <ul>
+    <section class="Biblioteca">
+        <header>
+            <h1>Biblioteca</h1>
+        </header>
+    </section>
+
+    <button class="menu-toggle" id="menu-toggle">Mostrar Menú</button> <br><br><br>
+
+    <nav id="menu" class="hidden">
+        <ul class="menu">
             <li><a href="#libros">Libros</a></li>
             <li><a href="#comics">Cómics</a></li>
             <li><a href="#manga">Manga</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
-  
- </div>
-  <section id="libros">
-    <h2>Libros</h2>
-    <div class="libro">
 
-        <div class="ordenar">
-            <button> 
-                <a href="http://www.alconet.com.ar/varios/libros/e-book_h/Harry_Potter_y_la_Piedra_Filosofal_01.pdf" target="_blank">
-                <img src="./libros/portadas/harry_potter1.png" alt="Portada de Mi Libro" width="100"></a>
-                <h3>Harry Portter y la cpiedra filosofal</h3>
-            </button> 
-
-            <button> 
-              <a href="http://www.alconet.com.ar/varios/libros/e-book_h/Harry_Potter_y_La_Camara_Secreta_02.pdf" target="_blank">
-              <img src="./libros/portadas/harry_potter2.png" alt="Portada de Mi Libro" width="100"></a>
-              <h3>Harry Portter y la camara de los secretos</h3>
-          </button> 
-
-            <button> 
-            <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/Harry_Potter_y_El_Prisionero_de_Azkaban_03.pdf" target="_blank">
-            <img src="./libros/portadas/harry_potter3.png" alt="Portada de Mi Libro" width="100"></a>
-            <h3>Harry Portter y el pricionero de azkaban</h3>
-        </button>
-    </div>
-    </section>
-
+    <!-- Buscador -->
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Buscar...">
     </div>
 
-  </section>
+    <div class="conteiner">
+        <!-- Libros -->
+        <section id="libros">
+            <h2>Libros</h2>
+            <div class="ordenar">
+                <div class="item" data-title="harry potter y la piedra filosofal">
+                    <a href="http://www.alconet.com.ar/varios/libros/e-book_h/Harry_Potter_y_la_Piedra_Filosofal_01.pdf"
+                        target="_blank">
+                        <img src="./libros/portadaLibro/harry_potter1.png" alt="Portada de Harry Potter 1" class="image">
+                    </a>
+                    <h3>Harry Potter <br> y la piedra filosofal</h3>
+                </div>
 
-  <section id="comics">
-    <h2>Cómics</h2>
-    <div class="comic">
+                <div class="item" data-title="harry potter y la camara secreta">
+                    <a href="http://www.alconet.com.ar/varios/libros/e-book_h/Harry_Potter_y_La_Camara_Secreta_02.pdf"
+                        target="_blank">
+                        <img src="./libros/portadaLibro/harry_potter2.png" alt="Portada de Harry Potter 2" class="image">
+                    </a>
+                    <h3>Harry Potter <br> y la cámara secreta</h3>
+                </div>
 
-      <div class="ordenar">
+                <div class="item" data-title="harry potter y el prisionero de azkaban">
+                    <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/Harry_Potter_y_El_Prisionero_de_Azkaban_03.pdf"
+                        target="_blank">
+                        <img src="./libros/portadaLibro/harry_potter3.png" alt="Portada de Harry Potter 3" class="image">
+                    </a>
+                    <h3>Harry Potter <br> y el prisionero de Azkaban</h3>
+                </div>
 
-      <button> 
-        <a href="https://mega.nz/folder/japEyICL#tKELUlQz0kYCcCzN1UzjvQ" target="_blank">
-        <img src="./comic/portadas/superior_spider-man.png" alt="Portada de Mi Libro" width="100"></a>
-        <h3>Superior Spider-man 1 <br> (para descargar)</h3>
-    </button>
+                <div class="item" data-title="el principito">
+                    <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/el%20principito.pdf" target="_blank">
+                        <img src="./libros/portadaLibro/principito.png" alt="Portada de El Principito" class="image">
+                    </a>
+                    <h3>El Principito</h3>
+                </div>
 
-    <button> 
-      <a href="https://mega.nz/folder/SGpGhAzb#guedHTu_cVoFcclGeizBSw" target="_blank">
-      <img src="./comic/portadas/superior_spider-man.png" alt="Portada de Mi Libro" width="100"></a>
-      <h3>Superior Spider-man 2 <br> (para descargar)</h3>
-  </button>
+                <div class="item" data-title="El señor de los anillos la comunidad del anillo">
+                    <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/J.R.R.%20Tolkien%20La%20Comunidad%20del%20anillo%20I.pdf"
+                        target="_blank">
+                        <img src="./libros/portadaLibro/elseñordelosanillos.png" alt="Portada de El Señor de los Anillos" class="image">
+                    </a>
+                    <h3>El Señor de los Anillos: <br> La Comunidad del Anillo</h3>
+                </div>
 
-  </div>
+                <div class="item" data-title="El señor de los anillos Las 2 torres">
+                    <a href="https://www.mercaba.org/SANLUIS/ALiteratura/Literatura%20contempor%C3%A1nea/Tolkien%20J.%20R.%20R/El%20se%C3%B1or%20de%20los%20anillos%202%20Las%20Dos%20Torres.pdf"
+                        target="_blank">
+                        <img src="./libros/portadaLibro/elseñordelosanillos2.png" alt="Portada de El Señor de los Anillos" class="image">
+                    </a>
+                    <h3>El Señor de los Anillos: <br> Las 2 torres</h3>
+                </div>
+
+                <div class="item" data-title="El señor de los anillos El retorno del Rey">
+                    <a href="https://www.mercaba.org/SANLUIS/ALiteratura/Literatura%20contempor%C3%A1nea/Tolkien%20J.%20R.%20R/El%20se%C3%B1or%20de%20los%20anillos%203%20El%20retorno%20del%20Rey.pdf"
+                        target="_blank">
+                        <img src="./libros/portadaLibro/elseñordelosanillos3.png" alt="Portada de El Señor de los Anillos" class="image">
+                    </a>
+                    <h3>El Señor de los Anillos: <br> El retorno del Rey</h3>
+                </div>
+
+                <div class="item" data-title="Las cronicas de Narnia El Leon, La Bruja y El Ropero">
+                    <a href="https://uruguayeduca.anep.edu.uy/sites/default/files/2019-05/texto_las-cronicas-de-narnia-el-leon-la-bruja-y-el-ropero.pdf"
+                        target="_blank">
+                        <img src="./libros/portadaLibro/narnia.png" alt="Las cronicas de Narnia" class="image">
+                    </a>
+                    <h3>Las cronicas de Narnia: <br> El Leon, La Bruja y El Ropero</h3>
+                </div>
+
+                <div class="item" data-title="Las cronicas de Narnia El principe Caspian">
+                    <a href="https://psiqueyeros.wordpress.com/wp-content/uploads/2010/04/lewis-c-s-las-cronicas-de-narnia-ii-el-principe-caspian.pdf"
+                        target="_blank">
+                        <img src="./libros/portadaLibro/narnia2.png" alt="Las cronicas de Narnia" class="image">
+                    </a>
+                    <h3>Las cronicas de Narnia: <br> El principe Caspian</h3>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Cómics -->
+        <section id="comics">
+            <h2>Cómics</h2>
+            <div class="ordenar">
+                <div class="item" data-title="superior spider-man 1">
+                    <a href="https://mega.nz/folder/japEyICL#tKELUlQz0kYCcCzN1UzjvQ" target="_blank">
+                        <img src="./comic/portadas/superior_spider-man.png" alt="Portada de Superior Spider-man 1"
+                            class="image">
+                    </a>
+                    <h3>Superior Spider-man <br>
+                    parte 1</h3>
+                </div>
+
+                <div class="item" data-title="superior spider-man 2">
+                    <a href="https://mega.nz/folder/SGpGhAzb#guedHTu_cVoFcclGeizBSw" target="_blank">
+                        <img src="./comic/portadas/superior_spider-man.png" alt="Portada de Superior Spider-man 2"
+                            class="image">
+                    </a>
+                    <h3>Superior Spider-man <br>
+                    parte 2</h3>
+                </div>
+
+                <div class="item" data-title="dead pool mata al universo marvel parte 1">
+                    <a href="https://drive.google.com/file/d/1oT5QgvpQoh4p-tS_NCfdTRS27-lRhNOg/view" target="_blank">
+                        <img src="./comic/portadas/deadpool.png" alt="Portada de Superior Spider-man 1"
+                            class="image">
+                    </a>
+                    <h3>Dead Pool mata al universo marvel<br>
+                    parte 1</h3>
+                </div>
+
+                <div class="item" data-title="dead pool mata al universo marvel parte 2-5">
+                    <a href="https://drive.google.com/file/d/1AhQrTbV8_fhGWKjFIitD71NhKZQIzhjH/view" target="_blank">
+                        <img src="./comic/portadas/deadpool.png" alt="Portada de Superior Spider-man 1"
+                            class="image">
+                    </a>
+                    <h3>Dead Pool mata al universo marvel<br>
+                    parte 2-5</h3>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Mangas -->
+        <section id="manga">
+            <h2>Mangas</h2>
+            <div class="ordenar">
+                <div class="item" data-title="dragon ball super tomo 1-5">
+                    <a href="https://mega.nz/folder/AAUiHAza#0UgBuESneE5uQ4qRCm9BFg" target="_blank">
+                        <img src="./manga/portadas/dbs1.png" alt="Portada de Dragon Ball Super" class="image">
+                    </a>
+                    <h3>Dragon Ball Super <br>Tomo 1-5</h3>
+                </div>
+
+                <div class="item" data-title="Sousou no Frieren tomo 1-5">
+                    <a href="https://mega.nz/folder/TptjhYxJ#MOmMtAH1gifhaq2ZWEUL-w" target="_blank">
+                        <img src="./manga/portadas/frieren.png" alt="Portada de Sousou no Frieren" class="image">
+                    </a>
+                    <h3>Sousou no Frieren <br>Tomo 1-5</h3>
+                </div>
+
+                <div class="item" data-title="Sousou no Frieren tomo 6-10">
+                    <a href="https://mega.nz/folder/fllBzSpJ#oDt6nu3vIqz7EgzY9mcGAA" target="_blank">
+                        <img src="./manga/portadas/frieren2.png" alt="Portada de Sousou no Frieren" class="image">
+                    </a>
+                    <h3>Sousou no Frieren <br>Tomo 6-10</h3>
+                </div>
+
+                <div class="item" data-title="Sousou no Frieren tomo 11-14">
+                    <a href="https://www.mediafire.com/folder/grk58zcz5315z/SOU_NO_FRI_98-99" target="_blank">
+                        <img src="./manga/portadas/frieren3.png" alt="Portada de Sousou no Frieren" class="image">
+                    </a>
+                    <h3>Sousou no Frieren <br>Tomo 11-14</h3>
+                </div>
+
+                <div class="item" data-title="Tensei Shitara Slime Datta Ken 1-6">
+                    <a href="https://drive.google.com/drive/folders/1_ngIesTeTmaqYE_Scikt13Ki8hufD3FP" target="_blank">
+                        <img src="./manga/portadas/slime.png" alt="Portada de Tensei Shitara Slime Datta Ken" class="image">
+                    </a>
+                    <h3>Tensei Shitara Slime Datta Ken <br>Tomo 1-6</h3>
+                </div>
+
+                <div class="item" data-title="Tensei Shitara Slime Datta Ken 7-12">
+                    <a href="https://drive.google.com/drive/folders/1R8q4uDknpAeqJlOctjsvtHLpliDx6nfe" target="_blank">
+                        <img src="./manga/portadas/slime2.png" alt="Portada de Tensei Shitara Slime Datta Ken" class="image">
+                    </a>
+                    <h3>Tensei Shitara Slime Datta Ken <br>Tomo 7-12</h3>
+                </div>
+
+                <div class="item" data-title="Tensei Shitara Slime Datta Ken 13-18">
+                    <a href="https://drive.google.com/drive/folders/15wSLj0Gr1VQ1XkqSVHf26FerA_WxtqYt" target="_blank">
+                        <img src="./manga/portadas/slime3.png" alt="Portada de Tensei Shitara Slime Datta Ken" class="image">
+                    </a>
+                    <h3>Tensei Shitara Slime Datta Ken <br>Tomo 13-18</h3>
+                </div>
+
+                <div class="item" data-title="Tensei Shitara Slime Datta Ken 19-22">
+                    <a href="https://drive.google.com/drive/folders/15wSLj0Gr1VQ1XkqSVHf26FerA_WxtqYt" target="_blank">
+                        <img src="./manga/portadas/slime4.png" alt="Portada de Tensei Shitara Slime Datta Ken" class="image">
+                    </a>
+                    <h3>Tensei Shitara Slime Datta Ken <br>Tomo 19-22</h3>
+                </div>
+
+            </div>
+        </section>
     </div>
-  </section>
 
-  <section id="manga">
-    <h2>Mangas</h2>
-    <div class="manga">
+    <footer>
+        <p>© 2024 Mi Biblioteca Digital <br> Hecho por Gian Portillo y Gabriel Rojas</p>
+        <br>
+        <div>
+            <h3 id="contacto" style="color: rgb(255, 255, 255);">Contactos</h3>
+            <div class="social-icons">
+                <a href="https://github.com/GianPortillo" target="_blank">
+                    <p>Gian Portillo </p><i class="fab fa-github"></i>
+                </a>
+                <a href="https://github.com/GabrielRojas" target="_blank">
+                    <p>Gabriel Rojas</p><i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 
-      <div class="ordenar">
-
-      <button> 
-        <a href="https://mega.nz/folder/AAUiHAza#0UgBuESneE5uQ4qRCm9BFg" target="_blank">
-        <img src="./manga/portadas/dbs1.png" alt="Portada de Mi Libro" width="100"></a>
-        <h3>Dragon ball super tomo 1-5 <br>
-             (para descargar)</h3>
-
-      </button>
-    
-    </div>
-
-    </div>
-  </section>
-
-  
-<div class="orden">
-  <footer> 
-    <p>© 2024 Mi Biblioteca Digital</p>
-  </footer>
-</div>
-
+    <script src="./nav.js"></script>
+    <script src="./search.js"></script>
+    <script src="./itemEffect.js"></script>
 </body>
+
 </html>

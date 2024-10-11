@@ -1,94 +1,164 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f1f1;
-    color: #373737;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  background-image: url('./fondo.png');  /* Ruta de la imagen */
+  background-size: cover;  /* Ajusta la imagen para que cubra toda la pantalla */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat;  /* Evita que la imagen se repita */
+  background-attachment: fixed;  /* Fija la imagen para que no se mueva al hacer scroll */
+}
+
+h2{
+  background-color: rgb(200, 44, 44);
+  margin-left: 40%;
+  margin-right: 40%;
+  border-radius: 1%;
+  text-align: center;
+  color: #f0f0f0;
+}
+h3{
+  color: #f0f0f0;
+}
+
+p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave para texto */
+  font-size: 1em; /* Tamaño de texto */
+  color: #ffffff; /* Color de texto */
+}
+
+a {
+  background-color: rgb(108, 70, 132); /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 1em; /* Tamaño de texto del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: all 0.3s ease; /* Suaviza la animación */
+  text-align: center;
+  justify-content: center;
+  display: block;
+}
+
+ a:hover {
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más profunda al hacer hover */
+  background-color: #420a4b; /* Color más oscuro en hover */
+}
+
+img{
+  width: auto;
+  max-width: 100%; 
+  padding: 2%; 
+  margin: 1%; 
+  background-color: #765ab8;
+  border-radius: 5px; 
+  overflow: hidden; 
+}
+
+
+.Biblioteca header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(108, 70, 132);
+  color: white;
+}
+
+.menu-toggle {
+  display: flex;
+  margin: 20px;
+  position: fixed;
+  background-color: #333;
+  color: #f0f0f0;
+  padding: 1em;
+}
+
+.menu-toggle:hover {
+  background-color: #555;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  position: fixed;
   
+}
 
-  nav {
-      background-color: #333;
-      padding: 10px;
-      
-      position: fixed
-  }
-  nav h1{
-    padding-left: 500px;
-  }
-
-  nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-  }
-
-  nav ul li {
-      float: left;
-  }
-
-  nav ul li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 20px;
-      text-decoration: none;
-  }
-
-  nav ul li a:hover {
-      background-color: #111;
-  }
-
-  nav::after {
-      content: "";
-      clear: both;
-      display: table;
-  }
+.menu li {
+  display: inline;
+  margin-right: 20px;
   
-  section {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    background-color: rgb(35, 31, 31);
-    border-radius: 5px;
-  }
-  
-  h1, h2 {
-    margin: 0 0 10px;
-    color: #ddd;
-    text-align: center;
-  }
-  
-  footer {
-    background-color:  #232326;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    bottom: 0;
-    margin-left: 10px;
-  }
-  button{
-    text-align: center;
-    justify-content: center;
-    display: block;
-  }
-  img{
-    width: 200px;
-  }
-  .ordenar{
-    display: flex;
-    justify-content: center;
-  }
-  
-  h2{
-    background-color: rgb(200, 44, 44);
-    margin-left: 800px;
-    margin-right: 800px;
-    border-radius: 10px;
-  }
-  .Biblioteca{
-    background-color: #111;
-    padding: 10px;
-  }
+}
+
+.hidden {
+  display: none;
+}
+
+.search-bar {
+  text-align: center;
+  margin: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 80%;
+  max-width: 600px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.ordenar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.item img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: rgb(108, 70, 132);
+  color: white; 
+  padding: 20px; 
+  text-align: center; 
+  position: relative; 
+  bottom: 0;
+  width: 100%; 
+
+}
+
+
+.footer .social-icons {
+  text-align: center; /* Centra los íconos */
+  margin-top: 15px;
+}
+
+footer .social-icons a {
+  margin: 0 10px; /* Espaciado horizontal entre los íconos */
+  color: white; /* Color de los íconos */
+  font-size: 24px; /* Tamaño de los íconos */
+  display: inline-block; /* Asegura que los íconos estén en línea */
+}
+
+footer .social-icons a:hover {
+  color: #1abc9c; /* Color al pasar el ratón */
+}
