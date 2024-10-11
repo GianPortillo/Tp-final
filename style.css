@@ -65,6 +65,8 @@ img{
   color: white;
 }
 
+
+
 .menu-toggle {
   display: flex;
   margin: 20px;
@@ -72,6 +74,7 @@ img{
   background-color: #333;
   color: #f0f0f0;
   padding: 1em;
+  margin: 1em;
 }
 
 .menu-toggle:hover {
@@ -162,3 +165,4 @@ footer .social-icons a {
 footer .social-icons a:hover {
   color: #1abc9c; /* Color al pasar el ratón */
 }
+
