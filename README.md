@@ -11,7 +11,7 @@ Explora nuestras secciones, descubre tus próximos favoritos y disfruta de la le
 </div>
 
 <h3>Link del proyecto</h3>
-<a>https://marvelous-cendol-27e98a.netlify.app/</a>
+<a>https://marvelous-cendol-27e98a.netlify.app/](https://inspiring-entremet-73c916.netlify.app/</a>  
 
 <h2>Equipo del proyecto</h2>
 <li>Gian Portillo</li>
