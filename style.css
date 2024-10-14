@@ -3,11 +3,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f0f0f0;
-  background-image: url('./fondo.png');  /* Ruta de la imagen */
-  background-size: cover;  /* Ajusta la imagen para que cubra toda la pantalla */
-  background-position: center;  /* Centra la imagen */
-  background-repeat: no-repeat;  /* Evita que la imagen se repita */
-  background-attachment: fixed;  /* Fija la imagen para que no se mueva al hacer scroll */
+  background-image: url('./fondo.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;  
 }
 
 h2{
@@ -23,28 +23,28 @@ h3{
 }
 
 p {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave para texto */
-  font-size: 1em; /* Tamaño de texto */
-  color: #ffffff; /* Color de texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 1em;
+  color: #ffffff;
 }
 
 a {
-  background-color: rgb(108, 70, 132); /* Color de fondo del botón */
-  color: white; /* Color del texto */
-  padding: 10px 20px; /* Espaciado interno */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Bordes redondeados */
-  font-size: 1em; /* Tamaño de texto del botón */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  transition: all 0.3s ease; /* Suaviza la animación */
+  background-color: rgb(108, 70, 132);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
   text-align: center;
   justify-content: center;
   display: block;
 }
 
  a:hover {
-  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más profunda al hacer hover */
-  background-color: #420a4b; /* Color más oscuro en hover */
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+  background-color: #420a4b;
 }
 
 img{
@@ -151,18 +151,18 @@ footer {
 
 
 .footer .social-icons {
-  text-align: center; /* Centra los íconos */
+  text-align: center; 
   margin-top: 15px;
 }
 
 footer .social-icons a {
-  margin: 0 10px; /* Espaciado horizontal entre los íconos */
-  color: white; /* Color de los íconos */
-  font-size: 24px; /* Tamaño de los íconos */
-  display: inline-block; /* Asegura que los íconos estén en línea */
+  margin: 0 10px;
+  color: white; 
+  font-size: 24px;
+  display: inline-block;
 }
 
 footer .social-icons a:hover {
-  color: #1abc9c; /* Color al pasar el ratón */
+  color: #1abc9c;
 }
 
